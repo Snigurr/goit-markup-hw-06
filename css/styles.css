@@ -12,13 +12,16 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 /* ключові умови дз */
+
 img{
     display: block;
     max-width: 100%;
 }
 
 /* homework 3 */
+
 .header{
     border-bottom: 1px solid #e7e9fc; 
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -34,6 +37,7 @@ img{
 .nav-header{
     display: flex;
     align-items: center;
+    height: 56px;
 }
 
 .current {
@@ -89,12 +93,14 @@ img{
     gap: 40px;
 }
 
+
 .header-link-menu::before,
 .discr-links::after {
     background: var(--OCEAN, #404BBF);
 }
 
 /* links header */
+
 .links {
     list-style-type: none;
 }
@@ -120,16 +126,17 @@ img{
     margin-left: auto;
 }
 
-/* секції */
+/* ============================================секції========================================== */
+
 .section-one{
     /* для визначення відступів всередині секції */
-    padding: 188px 0;
+    padding: 72px 0;
     background-color: #2e2f42;
-    max-height: 600px;
+    height: 432px;
     margin: 0 auto;
     background-image:
     linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    max-width: 1440px;
+    max-width: 768px;
     /* для уникнення повторення фонового зображення відносно його власної ширини та висоти */
     background-repeat: no-repeat;
     background-position: center;
@@ -137,17 +144,31 @@ img{
 }
 
 .section-two{
-    padding: 120px 0;
+    padding: 96px 0;
+   
 }
 
 .section-two .links{
     display: flex;
-    gap: 24px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 72px;
 }
 
-.discr-links{
-    /* визначення ширини пункту списку */
-    width: calc((100% - 72px) / 4);
+/* modal menu button */
+
+.mobile-only-button{
+    padding: 0;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline;
+    margin-left: auto;
 }
 
 .span-logo { 
@@ -231,8 +252,8 @@ img{
 }
 
 .section-four{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 72px;
+    padding-bottom: 96px;
 }
 
 .section-four .section-title{
@@ -241,16 +262,13 @@ img{
 
 .section-four .links{
     display: flex;
-    /* для переносу елементів списку на новий рядок якщо їм не вистачає місця в попередньому */
     flex-wrap: wrap;
-    /* визначення горизонтальних відступів між пунктами списку */
-    column-gap: 24px;
-    /* визначення вертикальних відступів між елементами списку якщо вони переносяться на новий рядок */
+    column-gap: 48px;
     row-gap: 48px;
 }
 
 .sec-four-links{
-    width: calc((100% - 48px) / 3);
+    width: 288px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -304,14 +322,16 @@ img{
 
 .section-three .links{
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
 }
 
 .section-three-li{
     background-color: #FFFFFF;
     /* homework3 */
-    width: calc((100% - 72px) / 4);
+   
     /* визначення заокруглень внизу блока */
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -324,39 +344,45 @@ img{
 }
 
 .main-title {
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07143;
     font-weight: 700;
     color: #fff;
-    max-width: 496px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
+    line-height: 40px;
+    letter-spacing: 0.72px;
     text-align: center;
     margin: auto;
+    width: 288px;
 }
 
 .dscr-title {
-    /* titles for second section "description" */
     color: var(--NAVY-BLUE, #2E2F42);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    /* 120% */
-    letter-spacing: 0.4px;
-    /* homework3 */
-    /* визначення відступу між заголовком і параграфом */
-    margin-bottom: 8px; 
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+
+    
 }
 
+
 /* p    for second section "description" */
+
 .dscr-title-description {
     color: var(--SLATE, #434455);
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        
 }
 
 /* titles for section h2 */
+
 .section-title {
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -466,11 +492,14 @@ body {
 
 .footer .container{
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+   
 }
 
 .logo-p{
-    margin-right: 120px;
+    margin: auto;
 }
 
 .footer .header-link-logo{
@@ -504,14 +533,8 @@ body {
 
 /* ////////////////////////////////////icon///////////////////////////// */
 .section-two-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    border: 1px solid  #8E8F99;
+    display: none;
+    
 }
 
 .icon-social-media-ul{
@@ -631,8 +654,8 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    transform: translate(-60%, -60%) scale(1);
+    width: 320px;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -851,13 +874,19 @@ input:focus + .person{
 
 /* modal window menu */
 .modal-m {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 584px;
-    background: #FFF; 
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -60%) scale(1);
+        width: 320px;
+        min-height: 640px;
+        background: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 72px 24px 24px 24px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 70px 16px 38px;
+        z-index: 999;
 }
 
 .links-modal-m{
@@ -916,9 +945,7 @@ input:focus + .person{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
-.modal-m .footer-svg{
-    
-}
+
 
 .address-modal-m{
     margin-top: 168px;
@@ -932,38 +959,188 @@ input:focus + .person{
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+    width: 320px;
+   
+
+
 }
 
-/* for leptop  */
-@media screen and (min-width: 768px) {
-    .wrapper-nav, .address {
-        display: flex;
-    }
-    
-    .container {
-        max-width: 1158px;
-    }
 
-    .mobile-only-button {
-        display: none;
-    }
-    .header-link-menu {
-        display: block;
-    }
-    .header-link-address {
-        display: flex;
-    }
-}
-/* end for leptop*/
 
 /* for PC */
-@media (mix-width:1440px) {
+@media screen and (min-width:1158px) {
     .container {
-        width: 1158px;
+        width: 1440px;
         padding-left: 15px;
         padding-right: 15px;
     }
+
+        .modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            width: 408px;
+            min-height: 584px;
+            background: #fcfcfc;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 72px 24px 24px 24px;
+        }
+
+
+    .section-title {
+        color: var(--NAVY-BLUE, #2E2F42);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+    }
+
+
+    .section-four .links {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 24px;
+            row-gap: 48px;
+        }
+    
+    .sec-four-links {
+            width: calc((100% - 48px) / 3);
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+
+    .header .container {
+        width: auto;
+    }
+
+    .section-four {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+    .section-one {
+        /* для визначення відступів всередині секції */
+        padding: 188px 0;
+        background-color: #2e2f42;
+        margin: 0 auto;
+        background-image:
+            linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        max-width: 1440px;
+        /* для уникнення повторення фонового зображення відносно його власної ширини та висоти */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .section-three .links {
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .main-title {
+        font-size: 56px;
+        line-height: 1.07143;
+        font-weight: 700;
+        color: #fff;
+        max-width: 496px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    .section-three-li {
+        background-color: #FFFFFF;
+        /* homework3 */
+        width: calc((100% - 72px) / 4);
+        /* визначення заокруглень внизу блока */
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .section-two {
+        padding: 120px 0;
+
+    }
+
+    .dscr-title {
+            color: var(--NAVY-BLUE, #2E2F42);
+            
+            font-family: Roboto;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+            width: 288px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            margin-bottom: 8px;
+        }
+
+    
+
+    
+    .section-two-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        border: 1px solid #8E8F99;
+    }
+
+    .section-two .links {
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .discr-links {
+        /* визначення ширини пункту списку */
+        width: calc((100% - 72px) / 4);
+    }
+
+
+
+    .nav-header {
+    
+    height: 72px;
 }
+
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    align-content: baseline;
+
+}
+.logo-p {
+    margin-right: 120px;
+}
+
+
+
+
+}
+
 /* end for PC */
 
 
@@ -972,10 +1149,31 @@ input:focus + .person{
 
 
 
-/* for tablet */
-@media screen and (min-width: 1158px) {
-    
+
+
+/* for tablet  */
+@media screen and (min-width: 768px) {
+
+    .wrapper-nav,
+    .address {
+        display: flex;
+    }
+
+    .container {
+        max-width: 1158px;
+    }
+
+    .mobile-only-button {
+        display: none;
+    }
+
+    .header-link-menu {
+        display: block;
+    }
+
+    .header-link-address {
+        display: flex;
+    }
 }
 
-
-/* for tablet  end */
+/* end for tablet*/
