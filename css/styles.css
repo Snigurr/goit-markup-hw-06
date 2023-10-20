@@ -116,7 +116,12 @@ img{
     text-decoration: none;
     /* для визначення відступа від логотипа */
     margin-right: 76px;
-    
+    margin-left: 0;
+   
+}
+
+.footer .header-link-logo{
+    margin-left: 72px;
 }
 
 .address{
@@ -214,6 +219,9 @@ img{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
 }
+
+
+
 
 .button {
     color: WHITE;
@@ -444,9 +452,12 @@ body {
     letter-spacing: 0.02em;
     /* homework3 */
     max-width: 264px;
+    
+    
 }
 
 .p-footer-s{
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -496,16 +507,19 @@ body {
     align-items: center;
     align-content: center;
     flex-direction: column;
+    gap: 72px;
    
 }
 
 .logo-p{
     margin: auto;
+    
 }
 
 .footer .header-link-logo{
     display: inline-block;
     margin-bottom: 16px;
+    
 }
 
 .header .address .links{
@@ -578,10 +592,13 @@ button {
 
 /* -----------------------INPUT----------------------- */
 .form{
-    margin-left: 80px;
+    margin-left: 0;
+    padding: 0;
+    
 }
 
 .input-p {
+    text-align: center;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -592,11 +609,14 @@ button {
 
 .input-footer-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    
 }
 
 .footer-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -608,6 +628,7 @@ button {
     border-radius: 4px;
     color: #ffffff;
 }
+
 ::placeholder{
     color: #ffffff;
 }
@@ -878,7 +899,7 @@ input:focus + .person{
     position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-60%, -60%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
         width: 320px;
         min-height: 640px;
         background: #fcfcfc;
@@ -894,11 +915,10 @@ input:focus + .person{
     list-style-type: none;
     gap: 40px;
     margin-left: 16px;
-    margin-top: 72px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px; 
+    gap: 24px; 
 }
 
 .links-modal-m-li{
@@ -927,6 +947,10 @@ input:focus + .person{
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+}
+
+.links-modal-m-adress .header-link-address {
+    display: flex;
 }
 
 .button-modal-m {
@@ -1131,16 +1155,59 @@ input:focus + .person{
     align-items: baseline;
     flex-direction: row;
     align-content: baseline;
+   
 
 }
 .logo-p {
     margin-right: 120px;
 }
 
+.input-footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: baseline;
+}
 
+.form {
+    margin-left: 80px;
+
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.input-p {
+    text-align: left;
+    
+}
+
+.p-footer-s {
+    text-align: left;
+   
+}
+
+
+
+.footer .header-link-logo {
+    margin-left: 0;
+}
 
 
 }
+
+
 
 /* end for PC */
 
