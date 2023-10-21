@@ -157,7 +157,7 @@ img{
     display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
         gap: 72px;
 }
 
@@ -367,12 +367,14 @@ img{
 .dscr-title {
     color: var(--NAVY-BLUE, #2E2F42);
         font-family: Roboto;
-        font-size: 20px;
+        font-size: 36px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.4px;
-
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-align: center;
+        padding-bottom: 8px;
+        
     
 }
 
@@ -676,7 +678,7 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-60%, -60%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     width: 320px;
     min-height: 584px;
     background: #fcfcfc;
@@ -1115,6 +1117,8 @@ input:focus + .person{
             line-height: 24px;
             letter-spacing: 0.4px;
             margin-bottom: 8px;
+            text-align: left;
+            padding-bottom: 0;
         }
 
     
@@ -1155,6 +1159,7 @@ input:focus + .person{
     align-items: baseline;
     flex-direction: row;
     align-content: baseline;
+    gap: 0;
    
 
 }
@@ -1222,14 +1227,17 @@ input:focus + .person{
 /* for tablet  */
 @media screen and (min-width: 768px) {
 
+    .container {
+        max-width: 1158px;
+        
+        }
+
     .wrapper-nav,
     .address {
         display: flex;
     }
 
-    .container {
-        max-width: 1158px;
-    }
+    
 
     .mobile-only-button {
         display: none;
