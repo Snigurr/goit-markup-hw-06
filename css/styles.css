@@ -338,6 +338,10 @@ img{
     margin-bottom: 8px;
 }
 
+.sec-f-hp .dscr-title-description {
+    font-weight: 400;
+}
+
 .section-three .links{
     display: flex;
     flex-direction: column;
@@ -1157,6 +1161,20 @@ input:focus + .person{
         text-align: left;
     }
 
+    .dscr-title-description {
+        font-weight: 500;
+
+    }
+
+    .sec-f-hp .dscr-title {
+        font-weight: 500;
+    
+    }
+
+    .sec-f-hp .dscr-title-description{
+        font-weight: 400;
+    }
+
 
 
     
@@ -1279,6 +1297,8 @@ input:focus + .person{
         text-align: left;
         
     }
+
+    
 
     .discr-links {
         /* визначення ширини пункту списку */
