@@ -663,6 +663,15 @@ button {
     border-radius: 4px;
 }
 
+
+.footer-input-button:hover,
+.footer-input-button:focus {
+    background: var(--OCEAN, #404BBF);
+}
+
+
+
+
 .frame-three {
     margin-left: 16px;
 }
